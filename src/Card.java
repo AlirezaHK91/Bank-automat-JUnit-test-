@@ -8,4 +8,13 @@ public class Card {
         return true;
     }
 
+    boolean updatePin(String oldPin, String newPin) {
+        if (oldPin.equals(this.pin)) {
+            this.pin = newPin;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }

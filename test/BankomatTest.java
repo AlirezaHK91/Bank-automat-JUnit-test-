@@ -51,4 +51,13 @@ class BankomatTest {
         assertTrue(result);
     }
 
+    @Test
+    void updatePin() {
+        card.createPin("1111");
+
+        card.updatePin("1111","2222");
+
+        assertEquals(card.pin, "2222");
+    }
+
 }
